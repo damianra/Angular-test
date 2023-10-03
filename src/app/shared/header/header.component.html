@@ -1,0 +1,18 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+    <span><mat-icon>eco</mat-icon>My Application</span>
+  
+    <div class="spacer"></div>
+    <div [ngClass]="{'hidden-menu': showMenu}">
+        <a mat-button>Home</a>
+        <a mat-button>Section1</a>
+        <a mat-button>Section2</a>
+        <a mat-button>Section3</a>
+    </div>
+
+    <div class="example-button-container hambr">
+        <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+  </mat-toolbar>
+  
