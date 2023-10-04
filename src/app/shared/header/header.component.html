@@ -10,9 +10,25 @@
     </div>
 
     <div class="example-button-container hambr">
-        <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+        <button mat-mini-fab color="primary" [matMenuTriggerFor]="menu" aria-label="Example icon button with a menu icon">
           <mat-icon>menu</mat-icon>
         </button>
-      </div>
-  </mat-toolbar>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Redial</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>voicemail</mat-icon>
+            <span>Check voice mail</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>notifications_off</mat-icon>
+            <span>Disable alerts</span>
+          </button>
+        </mat-menu>
+        
+        
+    </div>
+</mat-toolbar>
   
