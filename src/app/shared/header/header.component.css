@@ -18,3 +18,13 @@
       display: block;
     }
   }
+
+  .menu-header{
+    top: 0;
+  }
+
+  .title{
+    margin-left: 5%;
+    font-size: 25px;
+  }
+  

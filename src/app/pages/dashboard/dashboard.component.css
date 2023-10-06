@@ -5,9 +5,25 @@
 }
 
 .titulo{
-    margin-top: 25px;
-    margin-bottom: 25px;
-    text-align: center;
+    margin-top: 5%;
     font-size: 40px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-family: Pacifico-Regular;
+}
+.masthead {
+    height: 200px;
+    background-image: url('../../../assets/staticImg/coding-1853305_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .cont{
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+.sub-titulo{
+    margin-top: 20px;
+    font-size: 35px;
+    font-family: Mohave-VariableFont_wght;
 }

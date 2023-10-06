@@ -2,3 +2,13 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: Pacifico-Regular;
+    src: url(assets/fonts/Pacifico/Pacifico-Regular.ttf) format("opentype");
+  }
+
+  @font-face {
+    font-family: Mohave-VariableFont_wght;
+    src: url(assets/fonts/Mohave/Mohave-VariableFont_wght.ttf) format("opentype");
+  }
