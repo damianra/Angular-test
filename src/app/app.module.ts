@@ -16,13 +16,16 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
+import { ProyectsComponent } from './pages/proyects/proyects.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProyectsComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MatGridListModule,
     FlexLayoutModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

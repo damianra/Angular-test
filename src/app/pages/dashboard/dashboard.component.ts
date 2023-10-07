@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -18,4 +19,5 @@ export class DashboardComponent {
     const target = event.target as Window;
     this.mybreakpoint = (target.innerWidth <= 768) ? 1 : 6;
   }
+
 }
