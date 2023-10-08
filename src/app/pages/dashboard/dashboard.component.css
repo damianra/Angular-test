@@ -2,29 +2,5 @@
 .contenido{
     margin-bottom: 100px;
     padding: 10px;
-}
-
-.titulo{
-    margin-top: 5%;
-    font-size: 40px;
-    color: white;
-    font-family: Pacifico-Regular;
-}
-.masthead {
-    height: 200px;
-    background-image: url('../../../assets/staticImg/coding-1853305_1280.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
-  .cont{
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-.sub-titulo{
-    margin-top: 20px;
-    font-size: 35px;
-    font-family: Mohave-VariableFont_wght;
-    color: #3f51b5;
-}

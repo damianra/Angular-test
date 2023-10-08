@@ -2,11 +2,8 @@
     <span><mat-icon class="buss">business_center</mat-icon><span class="title">Portfolio</span></span>
   
     <div class="spacer"></div>
-    <div [ngClass]="{'hidden-menu': showMenu}">
-        <a mat-button>Home</a>
-        <a mat-button>Section1</a>
-        <a mat-button>Section2</a>
-        <a mat-button>Section3</a>
+    <div [ngClass]="{'hidden-menu': showMenu}" *ngFor="let m of listmenu">
+        <a mat-button [routerLink]="['/', m.link]">{{ m.title }}</a>
     </div>
 
     <div class="example-button-container hambr">
@@ -14,23 +11,36 @@
           <mat-icon>menu</mat-icon>
         </button>
         <mat-menu #menu="matMenu">
+          <div *ngFor="let m of listmenu">
           <button mat-menu-item>
-            <mat-icon>dialpad</mat-icon>
-            <span>Redial</span>
+            <mat-icon>{{ m.icon }}</mat-icon>
+            <span>{{ m.title }}</span>
           </button>
-          <button mat-menu-item disabled>
-            <mat-icon>voicemail</mat-icon>
-            <span>Check voice mail</span>
-          </button>
-          <button mat-menu-item>
-            <mat-icon>notifications_off</mat-icon>
-            <span>Disable alerts</span>
-          </button>
+          </div>
         </mat-menu>
         
         
     </div>
 </mat-toolbar>
+
+
+<div class="text-center fw-bolder">
+  <header class="masthead">
+    <div class="container h-100 cont">
+      <div class="row h-90 align-items-center">
+        <h1 class="titulo fw-light">Portfolio Damian Ramirez</h1>
+      </div>
+    </div>
+  </header>
+</div>
+
+<div class="h-90 align-items-center">
+  <div class="container">
+  <hr>
+  <h1 class="fw-light sub-titulo">{{ section }}</h1>
+  <hr>
+  </div>
+</div>
 
 
   
